@@ -1,0 +1,65 @@
+@import url(http://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300);
+
+html{
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  height: 100%;
+  width: 100%;
+  display: table;
+  background: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQSDycdl157prsFQCfVsRvXB0q2VTAuGbz2dsjkuqlt2IWV5nx7g);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+h1{
+  text-align: center;
+  width: 100%;
+  font-family: 'Pacifico', cursive;
+  font-size: 5em;
+  margin-bottom: .5em;
+  
+}
+p{
+  text-align: center;
+  font-size: 22px;
+  font-family: verdana;
+}
+
+.row{
+  margin-left: -90px;
+  width: 270;
+}
+
+.container {
+  width: 9%;
+  margin: auto;
+  margin-top: 30px;
+  text-align: center;
+  /*
+   * margin: 10px; // 10 pixels all sides
+   * margin: 10px 20px; // 10 pixels top and bottom, 20 pixels left and right
+   * margin: 10px 20px 30px; // 10 pixels top, 20 pixels right and left, 30 pixels bottom
+   * margin: 10px 20px 30px 40px; // 10 pixels top, 20 pixels right, 30 pixels bottom, 40 pixels left
+   *
+   * margin-top, margin-right, margin-bottom, margin-left
+   *
+   */
+}
+.zip{
+  text-align: center;
+ 
+}
+#results{
+  width:-120%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+ font-size: medium;
+  
+}
