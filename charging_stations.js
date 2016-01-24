@@ -1,10 +1,5 @@
 $(document).ready(function(){
 
-    $('#find-charging-station').click(function(){
-        var zipcode = $('#zipnum').val();
-        getsZip(zipcode);
-    })
-
     $('#zipnum').keydown(function(e){
         if(e.keyCode == 13){
           var zipcode = $('#zipnum').val();
@@ -54,11 +49,13 @@ function getsZip(zip) {
             // build the individual div
             // concatenate it with the output string
             var net =   '<span class="glyphicon glyphicon-globe" aria-hidden="true"></span>' +
-                          'Network: ' + response.fuel_stations[i].ev_network;
+                          '   Network: ' + response.fuel_stations[i].ev_network;
             var phone = '<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>' +
-                          ' Phone: '+response.fuel_stations[i].station_phone;
-            var address = "Address: "+response.fuel_stations[i].street_address;
-            var website = "Website: "+response.fuel_stations[i].ev_network_web;
+                          '   Phone: ' + response.fuel_stations[i].station_phone;
+            var address ='<span class="glyphicon glyphicon-home" aria-hidden="true"></span>' +
+                          '   Address: ' + response.fuel_stations[i].street_address;
+            var website ='<span class="glyphicon glyphicon-phone" aria-hidden="true"></span>' +
+                          "   Website: "+ response.fuel_stations[i].ev_network_web;
 
             var station ='<br/><div class="location">' +
                         net + '<br />'+
